@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School - Management system</title>
+    <!-- cdn links -->
+    <link
+      rel="stylesheet"
+      href="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/css/clndr.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/1553cdc8ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body id="bodyElement">
+    <div class="whole-container">
+      <!-- ************************************** Navigation Bar ************************ -->
+      <header id="go-top">
+        <div class="icons">
+          <i>VSchool</i>
+          <span
+            ><i id="menuBar" class="fa-solid fa-bars"></i>
+            <i id="menuRem" class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <nav id="nav-element">
+          <ul>
+            <li><a href="#scroll-about">About</a></li>
+            <li><a href="#scroll-foreword">Foreword</a></li>
+            <li>
+              <a href="#" id="showDrop"
+                >Dropdawn<span
+                  ><i
+                    id="animate-icon"
+                    class="fa-solid fa-circle-chevron-down fa-beat-fade"
+                  ></i></span
+              ></a>
+              <div class="dropdown-container">
+                <ul style="display: block">
+                  <li><a href="#scroll-admission">Admission</a></li>
+                  <li><a href="#scroll-alumnus">Alumnus</a></li>
+                  <li><a href="#scroll-program">Programs</a></li>
+                  <li><a href="#scroll-services">Services</a></li>
+                  <li><a href="#scroll-faculty">Faculty</a></li>
+                  <li><a href="#scroll-infra">Edifices</a></li>
+                  <li><a href="#scroll-project">Projects</a></li>
+                  <li><a href="#scroll-event">Events</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#scroll-news">News</a></li>
+            <li><a href="#scroll-contact">Contact</a></li>
+            <li>
+              <a id="loginClick" href="#"
+                >Login
+                <span
+                  ><i
+                    id="animate-icon2"
+                    class="fa-solid fa-circle-chevron-down fa-beat-fade"
+                  ></i></span
+              ></a>
+              <div class="login-container">
+                <div class="log-tri"></div>
+                <form id="login-data">
+                  <p>Email Address</p>
+                  <input
+                    id="emailData"
+                    name="email"
+                    class="in-stl"
+                    type="email"
+                    required
+                  />
+                  <p>Password</p>
+                  <input
+                    type="password"
+                    name="password"
+                    required
+                    id="passwordData"
+                    class="in-stl"
+                  /><br />
+
+                  <button type="submit" class="btn">LOGIN</button><br />
+
+                  <input
+                    id="re-check"
+                    type="checkbox"
+                    name="check"
+                    id=""
+                  /><span>Remember me</span><br />
+                  <a id="log-forget" href="#">Forgot your password?</a>
+                </form>
+              </div>
+            </li>
+            <li>
+              <a id="sign-click" href="#"
+                >Singup
+                <span
+                  ><i
+                    id="animate-icon3"
+                    class="fa-solid fa-circle-chevron-down fa-beat-fade"
+                  ></i></span
+              ></a>
+              <div class="signin-container">
+                <div class="log-tri"></div>
+                <form id="form" method="post">
+                  <div
+                    id="res"
+                    style="color: green; font-size: 13px; padding-left: 2rem"
+                  ></div>
+                  <p>Name</p>
+                  <input id="singName" class="in-stl" type="text" name="name" />
+                  <p>Email</p>
+                  <input
+                    id="singEmail"
+                    class="in-stl"
+                    type="email"
+                    name="email"
+                    required
+                  />
+                  <p>Username</p>
+                  <input
+                    id="signUsername"
+                    class="in-stl"
+                    type="text"
+                    name="username"
+                    required
+                  />
+                  <p>Password</p>
+                  <input
+                    id="singPassword"
+                    class="in-stl"
+                    type="password"
+                    name="password"
+                    required
+                  />
+                  <button name="btn" type="submit" class="btn">SUBMIT</button
+                  ><br />
+                </form>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXX Navigation Bar XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- *************************** Banner ************************************ -->
+
+      <div id="hideOption">
+        <swiper-container
+          class="mySwiper"
+          pagination="true"
+          pagination-clickable="true"
+          navigation="true"
+          space-between="30"
+          centered-slides="true"
+          autoplay-delay="2500"
+          autoplay-disable-on-interaction="false"
+        >
+          <swiper-slide>
+            <div class="slide-container">
+              <img src="img/img1.jpg" alt="slider images" />
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <div class="slide-container">
+              <img src="img/img2.jpg" alt="slider images" />
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <div class="slide-container">
+              <img src="img/img3.jpg" alt="slider images" />
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <div class="slide-container">
+              <img src="img/img4.jpg" alt="slider images" />
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <div class="slide-container">
+              <img src="img/img 5.jpg" alt="slider images" />
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      <div class="go-top-arrow">
+        <a href="#go-top"><i class="fa-solid fa-arrow-up fa-bounce"></i></a>
+      </div>
+
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXX Banner XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- *************************** About ************************************** -->
+      <section id="scroll-about" class="about-container">
+        <h1>SCHOOL FOR STUDENT EXCHANGE, ENGINEERING & TECHNOLOGY</h1>
+        <hr />
+        <div data-aos-delay="95" data-aos="fade-left" class="about-content">
+          <h2>ABOUT</h2>
+          <div data-aos-delay="100" data-aos="fade-right" class="about-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="about-footer">
+            <div class="a-footer-img">
+              <img src="img/student1.jpg" alt="student image" />
+            </div>
+            <div class="a-footer-content">
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum velit esse cillum dolore.
+              </p>
+
+              <p>
+                "Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum velit esse cillum dolore."
+              </p>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </section>
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXX About XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** Foreword **************************************** -->
+
+      <section id="scroll-foreword" class="foreword-container">
+        <h1 data-aos-offset="200" data-aos-delay="100" data-aos="fade-left">
+          FOREWORD
+        </h1>
+        <div
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-right"
+          class="forword-body"
+        >
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum."
+          </p>
+          <div
+            class="foreword-artist"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+          >
+            <h3>Varun Mukhiya</h3>
+            <h3>Vice-Chancellor</h3>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Foreword XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** Dropdown Container ******************************-->
+
+      <!-- ***************************** Admissions Section ****************************** -->
+      <div id="scroll-admission" class="Admission-container">
+        <h1
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-left"
+        >
+          ADMISSIONS-2023 PROSPECTUS
+        </h1>
+        <div
+          class="admission-content"
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-right"
+        >
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum velit esse cillum dolore eu fugiat nulla
+            pariatur commodo. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div
+            class="admission-pdf"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+          >
+            <a href="#"><sup>[PDF]</sup>Admissions</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Admissions Section XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** Alumnus section ********************************** -->
+      <section id="scroll-alumnus" class="alumnus-container">
+        <h1
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-left"
+        >
+          ALUMNUS
+        </h1>
+        <div class="alumnus-body">
+          <div
+            class="content"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-right"
+          >
+            <h2>Hall</h2>
+            <img src="img/img1.jpg" alt="content img" />
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div
+            class="content"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-top-center"
+          >
+            <h2>Group Class</h2>
+            <img id="content-img2" src="img/img1.jpg" alt="content img" />
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div
+            class="content"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+          >
+            <h2>Lecture</h2>
+            <img id="content-img3" src="img/img1.jpg" alt="content img" />
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Alumnus section XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** Programs Section ********************************* -->
+      <section id="scroll-program" class="program-container">
+        <h1
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-left"
+        >
+          PROGRAMS
+        </h1>
+        <h3>
+          Lorem Ih3sum Dolor Sit Amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt.
+        </h3>
+        <div class="program-content">
+          <div
+            class="pro-con1"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/p1.png"
+              alt=""
+            />
+            <h2>Lorem</h2>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div
+            class="pro-con1"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/p2.png"
+              alt=""
+            />
+            <h2>Ipsom</h2>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div
+            class="pro-con1"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/p3.png"
+              alt=""
+            />
+            <h2>Lorem</h2>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div
+            class="pro-con1"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/p4.png"
+              alt=""
+            />
+            <h2>Lorem</h2>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Programs Section XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** Services Section ********************************* -->
+
+      <section id="scroll-services" class="service-container">
+        <h1
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-left"
+        >
+          SERVICES
+        </h1>
+        <h3
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-right"
+        >
+          We have taken up some Social Services done by our students in the
+          slums and backward regions so that they can not only excel in
+          education, but also as a good human being in the society.
+        </h3>
+        <div class="se-fle-con">
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+            class="ser-con1"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/s1.png"
+              alt="services images"
+            />
+            <h4>Free Medical Services</h4>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum cillum dolore eu
+              fugiat nulla commodo.
+            </p>
+          </div>
+
+          <div
+            class="ser-con1"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-right"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/s2.png"
+              alt="services images"
+            />
+            <h4>Free Education</h4>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum cillum dolore eu
+              fugiat nulla commodo.
+            </p>
+          </div>
+
+          <div
+            class="ser-con1"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/s3.png"
+              alt="services images"
+            />
+            <h4>Free Medical Supply</h4>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum cillum dolore eu
+              fugiat nulla commodo.
+            </p>
+          </div>
+
+          <div
+            class="ser-con1"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-right"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/s4.png"
+              alt="services images"
+            />
+            <h4>Social Interaction</h4>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum cillum dolore eu
+              fugiat nulla commodo.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX Services Section XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** Faculty Section ********************************** -->
+      <section id="scroll-faculty" class="faculty-container">
+        <h1
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-left"
+        >
+          FACULTY
+        </h1>
+        <div class="mask-container">
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-right"
+            class="faculty-mask-con"
+          >
+            <a href="#">
+              <img
+                src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/f1.jpg"
+                alt=""
+              />
+            </a>
+            <div class="mask">
+              <ul class="social">
+                <li>
+                  <a
+                    href="#"
+                    class="facebook"
+                    title="Go to Our Facebook Page"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="twitter"
+                    title="Go to Our Twitter Account"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="googleplus"
+                    title="Go to Our Google Plus Account"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <h3>Ross Gellar</h3>
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing
+            </p>
+          </div>
+
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+            class="faculty-mask-con"
+          >
+            <a href="#">
+              <img
+                src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/f3.jpg"
+                alt=""
+              />
+            </a>
+            <div class="mask">
+              <ul class="social">
+                <li>
+                  <a
+                    href="#"
+                    class="facebook"
+                    title="Go to Our Facebook Page"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="twitter"
+                    title="Go to Our Twitter Account"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="googleplus"
+                    title="Go to Our Google Plus Account"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <h3>Chandler Bing</h3>
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing
+            </p>
+          </div>
+
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-right"
+            class="faculty-mask-con"
+          >
+            <a href="#">
+              <img
+                src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/f2.jpg"
+                alt=""
+              />
+            </a>
+            <div class="mask">
+              <ul class="social">
+                <li>
+                  <a
+                    href="#"
+                    class="facebook"
+                    title="Go to Our Facebook Page"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="twitter"
+                    title="Go to Our Twitter Account"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="googleplus"
+                    title="Go to Our Google Plus Account"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <h3>Mike Hannigan</h3>
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing
+            </p>
+          </div>
+
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+            class="faculty-mask-con"
+          >
+            <a href="#">
+              <img
+                src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/f4.jpg"
+                alt=""
+              />
+            </a>
+            <div class="mask">
+              <ul class="social">
+                <li>
+                  <a
+                    href="#"
+                    class="facebook"
+                    title="Go to Our Facebook Page"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="twitter"
+                    title="Go to Our Twitter Account"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="googleplus"
+                    title="Go to Our Google Plus Account"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <h3>Rachel Green</h3>
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing
+            </p>
+          </div>
+
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-right"
+            class="faculty-mask-con"
+          >
+            <a href="#">
+              <img
+                src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/f5.jpg"
+                alt=""
+              />
+            </a>
+            <div class="mask">
+              <ul class="social">
+                <li>
+                  <a
+                    href="#"
+                    class="facebook"
+                    title="Go to Our Facebook Page"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="twitter"
+                    title="Go to Our Twitter Account"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="googleplus"
+                    title="Go to Our Google Plus Account"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <h3>Janice Hank</h3>
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing
+            </p>
+          </div>
+
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+            class="faculty-mask-con"
+          >
+            <a href="#">
+              <img
+                src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/f6.jpg"
+                alt=""
+              />
+            </a>
+            <div class="mask">
+              <ul class="social">
+                <li>
+                  <a
+                    href="#"
+                    class="facebook"
+                    title="Go to Our Facebook Page"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="twitter"
+                    title="Go to Our Twitter Account"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="googleplus"
+                    title="Go to Our Google Plus Account"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <h3>Boris Johnson</h3>
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing
+            </p>
+          </div>
+
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-right"
+            class="faculty-mask-con"
+          >
+            <a href="#">
+              <img
+                src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/f7.jpg"
+                alt=""
+              />
+            </a>
+            <div class="mask">
+              <ul class="social">
+                <li>
+                  <a
+                    href="#"
+                    class="facebook"
+                    title="Go to Our Facebook Page"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="twitter"
+                    title="Go to Our Twitter Account"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="googleplus"
+                    title="Go to Our Google Plus Account"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <h3>Leslie Chow</h3>
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing
+            </p>
+          </div>
+
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+            class="faculty-mask-con"
+          >
+            <a href="#">
+              <img
+                src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/f8.jpg"
+                alt=""
+              />
+            </a>
+            <div class="mask">
+              <ul class="social">
+                <li>
+                  <a
+                    href="#"
+                    class="facebook"
+                    title="Go to Our Facebook Page"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="twitter"
+                    title="Go to Our Twitter Account"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="googleplus"
+                    title="Go to Our Google Plus Account"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <h3>James May</h3>
+            <p>
+              But I must explain to you how all this mistaken idea of denouncing
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Fuculty Section XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** Infrastructure Section **************************** -->
+      <section id="scroll-infra" class="infra-container">
+        <h1
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-right"
+        >
+          INFRASTRUCTURE & FACILITIES
+        </h1>
+        <div
+          class="image-slider"
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-left"
+        >
+          <h1>OUT INFRASTRUCTURE & FACILITIES</h1>
+        </div>
+      </section>
+      <hr />
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Infrastructure Section XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** Project section *********************************** -->
+      <section id="scroll-project" class="project-container">
+        <h1
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-right"
+        >
+          PROJECTS, RESEARCH AND DEVELOPMENT
+        </h1>
+        <div class="project-content">
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-right"
+            class="projec-img-con"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/e1.jpg"
+              alt="project image"
+            />
+          </div>
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+            class="project-text"
+          >
+            <h2>Lorem Ipsom</h2>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              anim id est laborum cillum dolore eu fugiat nulla commodo. Sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              laborum.
+            </p>
+          </div>
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-right"
+            class="project-img-con2"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/e2.jpg"
+              alt="project img"
+            />
+          </div>
+        </div>
+        <div class="project-content">
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+            class="projec-img-con"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/e3.jpg"
+              alt="project image"
+            />
+          </div>
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-right"
+            class="project-text"
+          >
+            <h2>Dolores Sit</h2>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              anim id est laborum cillum dolore eu fugiat nulla commodo. Sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              laborum.
+            </p>
+          </div>
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+            class="project-img-con2"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/e4.jpg"
+              alt="project img"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Project section XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** Events Section *********************************** -->
+      <section id="scroll-event" class="event-container">
+        <h1
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-right"
+        >
+          EVENTS
+        </h1>
+        <div class="event-content-container">
+          <div
+            class="colender-container"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+          >
+            <div class="table-header">
+              <div class="prevous-con">
+                <span
+                  ><img
+                    src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/arrow-left.png"
+                    alt=""
+                /></span>
+              </div>
+              <div class="mon-con">
+                <span>July 2023</span>
+              </div>
+              <div class="next-con">
+                <span
+                  ><img
+                    src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/arrow-right.png"
+                    alt=""
+                /></span>
+              </div>
+            </div>
+            <div class="event-table">
+              <table class="table-container">
+                <thead>
+                  <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thr</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="th-hover">31</td>
+                    <td class="th-hover">1</td>
+                    <td class="th-hover">2</td>
+                    <td class="th-hover">3</td>
+                    <td class="th-hover">4</td>
+                    <td class="th-hover">5</td>
+                    <td class="th-hover">6</td>
+                  </tr>
+
+                  <tr>
+                    <td class="th-hover">7</td>
+                    <td class="th-hover">8</td>
+                    <td class="th-hover">9</td>
+                    <td class="th-hover">10</td>
+                    <td class="th-hover">11</td>
+                    <td class="th-hover">12</td>
+                    <td class="th-hover">13</td>
+                  </tr>
+
+                  <tr>
+                    <td class="th-hover">14</td>
+                    <td class="th-hover">15</td>
+                    <td class="th-hover">16</td>
+                    <td class="th-hover">17</td>
+                    <td class="th-hover">18</td>
+                    <td class="th-hover">19</td>
+                    <td class="th-hover">20</td>
+                  </tr>
+
+                  <tr>
+                    <td class="th-hover">21</td>
+                    <td class="th-hover">22</td>
+                    <td class="th-hover">23</td>
+                    <td class="th-hover">24</td>
+                    <td class="th-hover">25</td>
+                    <td class="th-hover">26</td>
+                    <td class="th-hover">27</td>
+                  </tr>
+
+                  <tr>
+                    <td class="th-hover">28</td>
+                    <td class="th-hover">29</td>
+                    <td class="th-hover">30</td>
+                    <td class="th-hover">1</td>
+                    <td class="th-hover">2</td>
+                    <td class="th-hover">3</td>
+                    <td class="th-hover">4</td>
+                  </tr>
+
+                  <tr>
+                    <td class="th-hover">5</td>
+                    <td class="th-hover">6</td>
+                    <td class="th-hover">7</td>
+                    <td class="th-hover">8</td>
+                    <td class="th-hover">9</td>
+                    <td class="th-hover">10</td>
+                    <td class="th-hover">11</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="event-dates">
+            <h2
+              data-aos-easing="ease-in-out"
+              data-aos-offset="300"
+              data-aos-delay="100"
+              data-aos="fade-left"
+            >
+              Lorem Ipsom
+            </h2>
+            <div class="event-date-con">
+              <p
+                data-aos-easing="ease-in-out"
+                data-aos-offset="300"
+                data-aos-delay="100"
+                data-aos="fade-right"
+              >
+                <span>22-12-2015</span>: Excepteur sint cupidatat proident.
+              </p>
+            </div>
+            <div class="event-date-con">
+              <p
+                data-aos-easing="ease-in-out"
+                data-aos-offset="300"
+                data-aos-delay="100"
+                data-aos="fade-left"
+              >
+                <span>22-12-2015</span>: Excepteur sint cupidatat proident.
+              </p>
+            </div>
+            <div class="event-date-con">
+              <p
+                data-aos-easing="ease-in-out"
+                data-aos-offset="300"
+                data-aos-delay="100"
+                data-aos="fade-right"
+              >
+                <span>22-12-2015</span>: Excepteur sint cupidatat proident.
+              </p>
+            </div>
+            <div class="event-date-con">
+              <p
+                data-aos-easing="ease-in-out"
+                data-aos-offset="300"
+                data-aos-delay="100"
+                data-aos="fade-left"
+              >
+                <span>22-12-2015</span>: Excepteur sint cupidatat proident.
+              </p>
+            </div>
+            <div class="event-date-con">
+              <p
+                data-aos-easing="ease-in-out"
+                data-aos-offset="300"
+                data-aos-delay="100"
+                data-aos="fade-right"
+              >
+                <span>22-12-2015</span>: Excepteur sint cupidatat proident.
+              </p>
+            </div>
+            <div class="event-date-con">
+              <p
+                data-aos-easing="ease-in-out"
+                data-aos-offset="300"
+                data-aos-delay="100"
+                data-aos="fade-left"
+              >
+                <span>22-12-2015</span>: Excepteur sint cupidatat proident.
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+            class="event-img"
+          >
+            <img
+              src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/event.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Events Section XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Dropdown Container XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** News Section ************************************* -->
+      <section id="scroll-news" class="news-container">
+        <h1
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-left"
+        >
+          OUR OWN NEWS PUBLICATION
+        </h1>
+        <div class="news-content">
+          <img
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-right"
+            src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/n1.jpg"
+            alt=""
+          />
+          <img
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+            src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/n2.jpg"
+            alt=""
+          />
+          <img
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-right"
+            src="https://p.w3layouts.com/demos/20-02-2016/exchange_education/web/images/n3.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <hr />
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX News Section XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** Contact Section ********************************** -->
+      <section id="scroll-contact" class="contact-container">
+        <h1
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-left"
+        >
+          CONTACT
+        </h1>
+        <div class="contact-forms">
+          <div class="contact-inputs">
+            <form action="" method="post">
+              <input
+                data-aos-easing="ease-in-out"
+                data-aos-offset="300"
+                data-aos-delay="100"
+                data-aos="fade-right"
+                type="text"
+                placeholder="Name"
+                required
+              /><br />
+              <input
+                data-aos-easing="ease-in-out"
+                data-aos-offset="300"
+                data-aos-delay="100"
+                data-aos="fade-left"
+                type="email"
+                placeholder="Email"
+                required
+              /><br />
+              <input
+                data-aos-easing="ease-in-out"
+                data-aos-offset="300"
+                data-aos-delay="100"
+                data-aos="fade-right"
+                id="numberic"
+                type="number"
+                placeholder="Phone"
+                required
+              /><br />
+            </form>
+          </div>
+          <div
+            class="contact-textarea"
+            data-aos-easing="ease-in-out"
+            data-aos-offset="300"
+            data-aos-delay="100"
+            data-aos="fade-left"
+          >
+            <textarea
+              name="message"
+              id=""
+              placeholder="Message"
+              cols="45"
+              rows="15"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <button
+          type="button"
+          data-aos-easing="ease-in-out"
+          data-aos-offset="300"
+          data-aos-delay="100"
+          data-aos="fade-right"
+        >
+          Send Message
+        </button>
+      </section>
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Contact Section XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** Map Section ************************************** -->
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22702.22744502486!2d11.113366067229226!3d44.662878362361056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fc3eca9065c15%3A0x12ec8a03aadae866!2s40019+Sant'Agata+Bolognese+BO%2C+Italy!5e0!3m2!1sen!2sin!4v1451281303075"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Map Section XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+      <!-- ***************************** Footer Section *********************************** -->
+      <section class="footer-container">
+        <div class="footer-content">
+          <div class="footer-acess">
+            <h1>Access</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation, sed do eiusmod
+              ullamco laboris nisi ut enim ad minim aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+          <div class="footer-adress">
+            <h1>Address</h1>
+            <p>
+              Parma Via Modena 40019 Sant'Agata Bolognese BO, Italy Telephone :
+              +1 (734) 123-4567
+            </p>
+            <p>Email:<span>info(at)sseet.com</span></p>
+          </div>
+          <div class="footer-links">
+            <h1>Links</h1>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Programs</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Edifices</a></li>
+              <li><a href="#">Projects</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-social-link">
+          <ul>
+            <li><a class="footer-facebook" href="#"></a></li>
+            <li><a class="footer-twitter" href="#"></a></li>
+            <li><a class="footer-google" href="#"></a></li>
+            <li><a class="footer-instagram" href="#"></a></li>
+            <li><a class="footer-youtube" href="#"></a></li>
+          </ul>
+        </div>
+        <h3>
+          © 2023 Exchange Education. All Rights Reserved | Design by Varun
+        </h3>
+      </section>
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Footer Section XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+    </div>
+
+    <!-- ***************************** Script CDNS ************************************* -->
+    <!-- Latest compiled and minified JavaScript -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXX Script CNDS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <!-- **************************** Script CODES ************************************** -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX Script CODES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+    <!-- **************************** Script File ****************************************-->
+    <script defer src="js/script.js"></script>
+    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX Script File XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+  </body>
+</html>
